@@ -43,12 +43,4 @@ testem.log
 .DS_Store
 Thumbs.db
 
- .editorconfig
-        .vscode/
-        angular.json
-        package-lock.json
-        package.json
-        src/
-        tsconfig.app.json
-        tsconfig.json
-        tsconfig.spec.json
+

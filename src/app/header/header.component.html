@@ -1,36 +1,26 @@
-<header class="ae-container-fluid ae-container-fluid--full rk-header ">
-  <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
-  <label for="mobile-menu">
-    <svg>
-      <use xlink:href="assets/img/symbols.svg#bar"></use>
-    </svg>
-    <svg>
-      <use xlink:href="assets/img/symbols.svg#bar"></use>
-    </svg>
-    <svg>
-      <use xlink:href="assets/img/symbols.svg#bar"></use>
-    </svg>
-  </label>
-  <div class="ae-container-fluid rk-topbar">
-    <h1 class="rk-logo"><a routerLink="">{{ _servicio.info.titulo }}</a></h1>
-    <nav class="rk-navigation">
-      <ul class="rk-menu">
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="" class="rk-menu__link">Inicio</a>
-        </li>
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="nosotros" class="rk-menu__link">Nosotros</a>
-        </li>
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="servicios" class="rk-menu__link">Servicios</a>
-          <nav class="rk-menu__sub">
-            <ul class="rk-container">
-              <li routerLinkActive="active" class="rk-menu__item"><a routerLink="formulacion-de-proyectos-para-fondos-concursables" class="rk-menu__link">Formulación de proyectos para fondos concursables</a></li>
-              <li routerLinkActive="active" class="rk-menu__item"><a routerLink="diseño-y-desarrollo-de-sistemas-informáticos" class="rk-menu__link">Diseño y desarrollo de sistemas informáticos</a></li>
-              <li routerLinkActive="active" class="rk-menu__item"><a routerLink="modelamiento-de-procesos" class="rk-menu__link">Modelamiento de procesos</a></li>
-            </ul>
-          </nav>
-        </li>
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="contacto" class="rk-menu__link">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<div class="container-fluid">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <span class="fs-4">INGENIERIA INDUSTRIAL Y DE SISTEMA</span>
+    </a>
+
+
+    <ul class="nav nav-pills">
+
+      <li class="nav-item"><a routerLink="" class="nav-link" routerLinkActive="">Inicio</a></li>
+      <li class="nav-item"><a routerLink="nosotros" class="nav-link" routerLinkActive="active">Nosotros</a></li>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Servicios</a>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li class="nav-item"><a routerLink="formulacion-de-proyectos-para-fondos-concursables" class="nav-link">Formulación de proyectos para fondos concursables</a></li>
+          <li class="nav-item"><a routerLink="diseño-y-desarrollo-de-sistemas-informáticos" class="nav-link">Diseño y desarrollo de sistemas informáticos</a></li>
+          <li class="nav-item"><a routerLink="modelamiento-de-procesos" class="nav-link">Modelamiento de procesos</a></li>
+        </ul>
+      </li>
+      <li class="nav-item" routerLinkActive="active"><a routerLink="contacto" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Contacto</a></li>
+      
+    </ul>
+  </header>
+</div>
+
+

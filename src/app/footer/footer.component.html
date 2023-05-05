@@ -1,31 +1,73 @@
-<footer class="ae-container-fluid rk-footer ">
-  <div class="ae-grid ae-grid--collapse">
-    <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
-      <ul class="rk-menu rk-footer-menu">
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="nosotros" class="rk-menu__link">Nosotros</a>
-        </li>
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="servicios" class="rk-menu__link">Servicios</a>
-        </li>
-        <li routerLinkActive="active" class="rk-menu__item"><a routerLink="contacto" class="rk-menu__link">Contacto</a>
-        </li>
-      </ul>
-      <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">{{anio}} {{_servicio.info.titulo}} </span>Todos los derechos reservados.</p>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-lg-3 col-md-6 col-xs-12">
+        <div class="">
+
+          <div class="">
+              <th>{{_servicio.info.nombre}}</th>
+            </div>
+          <div class="">
+              <td>{{_servicio.info.telefono}}</td>
+          </div>
+          <div class="text-decoration-none">
+              <a href="mailto:richards.rojas@gmail.com" class="text-decoration-none text-reset" target="_blank">
+                <td>{{_servicio.info.email}}</td>
+              </a>
+          </div>
+
+        </div>
     </div>
-    <div class="ae-grid__item item-lg-4 au-xs-ta-center"><a [href]="_servicio.info.facebook" class="rk-social-btn ">
-        <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
-        </svg></a>
-        <a [href]="_servicio.info.twitter" class="rk-social-btn ">
-        <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
-        </svg></a>
-        <a [href]="_servicio.info.twitter" class="rk-social-btn ">
-        <svg>
-          <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
-        </svg></a>
-      </div>
-    <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
-      <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder"> <a href="mailTO:{{ _servicio.info.email }}" class="rk-dark-color ">{{_servicio.info.email}}</a></span></p>
+    <div class="col-lg-3 col-md-6 col-xs-12">
+
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://web.facebook.com/profile.php?id=100004609082254"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <a
+      class="btn btn-link btn-floating btn-lg text-dark m-1"
+      href="https://www.linkedin.com/in/richards-herm%C3%B3genes-rojas-arquero-14b87186/"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="fab fa-linkedin"></i
+    ></a>
+
+    <a
+    class="btn btn-link btn-floating btn-lg text-dark m-1"
+    href="https://www.instagram.com/richards.rojas/"
+    role="button"
+    data-mdb-ripple-color="dark"
+    ><i class="fab fa-instagram"></i
+  ></a>
+
+  <a
+  class="btn btn-link btn-floating btn-lg text-dark m-1"
+  href="https://wa.me/+56957309317?text=Hola%20gracias%20por%20ponerte%20en%20contacto%20con%20Richards%20Rojas%20a%20trávez%20de%20nuestra%20página%20web.%20Por%20favor,%20cuéntanos%20en%20qué%20podemos%20ayudarte%20y%20te%20responderemos%20lo%20antes%20posible.%20Gracias%20por%20tu%20interés!"
+  role="button"
+  data-mdb-ripple-color="dark"
+  ><i class="fab fa-whatsapp"></i
+></a>
+
+
+
+
+
     </div>
-  </div>
-</footer>
+
+    <div class="col-lg-3 col-md-6 col-xs-12">
+      <div class="pull-right">
+    <ul class="nav">
+      <li class="nav-item"><a routerLink="" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+      <li class="nav-item"><a routerLink="nosotros" class="nav-link px-2 text-body-secondary">Nosotros</a></li>
+      <li class="nav-item"><a routerLink="servicios" class="nav-link px-2 text-body-secondary">Servicios</a></li>
+      <li class="nav-item"><a routerLink="contacto" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+    </ul>
+    </div></div>
+  </footer>
+</div>
+<div class="container-fluid text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+<p class=""><span class="ae-u-bolder">{{anio}} &copy; {{_servicio.info.titulo}}</span></p>
+</div>

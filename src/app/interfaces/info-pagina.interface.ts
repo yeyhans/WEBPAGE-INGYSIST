@@ -5,5 +5,7 @@ export interface InfoPagina {
   facebook?: string;
   twitter?: string;
   instagram?: string;
+  telefono?: string;
   clientes?: any[];
+
 }

@@ -18,6 +18,10 @@ import { ClientesComponent } from './pages/clientes/clientes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarruselClientes } from "./componentes/carrusel/clientes/clientes.component";
+import { environment } from 'src/environments/environment.development';
+//FIRESTORE
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 
 
 
@@ -43,7 +47,10 @@ import { CarruselClientes } from "./componentes/carrusel/clientes/clientes.compo
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        NgbModule
+        NgbModule,
+        provideFirebaseApp(() => initializeApp(environment.firebase)),
+        provideFirestore(() => getFirestore())
+
 
     ]
 })

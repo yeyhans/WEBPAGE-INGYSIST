@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="pb-4 border-bottom">Acerca de Nosotros</h1>
+  <div class="border-0">
+  <div class="row mb-2">
+  <div *ngFor="let acerca of acercade" class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="height: 400px;">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2">
+        <h3 class="mb-0">{{acerca.titulo}}</h3></strong>
+        <div class="mb-1 text-body-secondary"></div>
+        <p style="text-align: justify;" class="card-text mb-auto">{{acerca.descripcion}}</p>
+
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <img src={{acerca.urlImg}} class="card-img" width="200" height="250">
+      </div>
+    </div>
+  </div>

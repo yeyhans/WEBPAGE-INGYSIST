@@ -23,6 +23,7 @@ import { environment } from 'src/environments/environment.development';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { AcercadeComponent } from './componentes/desc/acercade/acercade.component';
+import { ProyectosComponent } from './componentes/desc/proyectos/proyectos.component';
 
 
 
@@ -41,7 +42,8 @@ import { AcercadeComponent } from './componentes/desc/acercade/acercade.componen
         ContactoComponent,
         ClientesComponent,
         CarruselClientes,
-        AcercadeComponent
+        AcercadeComponent,
+        ProyectosComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

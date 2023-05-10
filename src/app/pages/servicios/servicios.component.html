@@ -1,30 +1,14 @@
 <title>SERVICIOS</title>
 <div class="container marketing">
-<div class="row">
-  <div class="col-lg-4">
-    <img src="/assets/img/formulaciondeproyecto.jpg" class="bd-placeholder-img rounded-circle" width="240" height="240" preserveAspectRatio="xMidYMid slice" focusable="false">
+<div class="row align-items-center">
+  <div class="col-lg-4 text-center animate__animated animate__fadeIn" *ngFor="let s of servicios">
+    <img src={{s.urlImg}} class="bd-placeholder-img rounded-circle" width="250"  preserveAspectRatio="xMidYMid slice" focusable="false">
 
-    <h2 class="fw-normal">Formulación de proyectos para fondos concursables.</h2>
-    <p>Descubre la financiación ideal para tu proyecto con nuestro servicio de análisis de ideas y fondos de financiamiento.</p>
-    <p><a class="btn btn-secondary" routerLink="/formulacion-de-proyectos-para-fondos-concursables">Ver detalles &raquo;</a></p>
-
-  </div><!-- /.col-lg-4 -->
-  <div class="col-lg-4">
-    <img src="/assets/img/disenoinformatico.jpg" class="bd-placeholder-img rounded-circle" width="240" height="240" preserveAspectRatio="xMidYMid slice" focusable="false">
-
-    <h2 class="fw-normal">Diseño y desarrollo de sistemas informáticos.</h2>
-    <p>Transforma tus ideas en sistemas innovadores y gana financiamiento con nuestro equipo de expertos.</p>
-    <p><a class="btn btn-secondary" routerLink="/diseño-y-desarrollo-de-sistemas-informáticos">Ver detalles &raquo;</a></p>
-
-  </div><!-- /.col-lg-4 -->
-  <div class="col-lg-4">
-    <img src="/assets/img/modelamientoproceso.jpg" class="bd-placeholder-img rounded-circle" width="240" height="240" preserveAspectRatio="xMidYMid slice" focusable="false">
-    <h2 class="fw-normal">Modelamiento de procesos.</h2>
-    <p>Optimiza tus procesos y mejora el rendimiento de tu empresa con nuestro equipo de ingenieros industriales especializados.</p>
-    <p><a class="btn btn-secondary" routerLink="/modelamiento-de-procesos">Ver detalles &raquo;</a></p>
-
-  </div><!-- /.col-lg-4 -->
-</div></div><!-- /.row -->
+    <div class="col"><h2 class="fw-normal center">{{s.titulo}}</h2></div>
+    <div class="col">{{s.descripcion}}</div>
+    <div class="col"><a type="button" class="btn btn-dark" routerLink={{s.ruta}}>Ver detalles &raquo;</a></div>
+  </div>
+<!-- /.col-lg-4 -->
 
 
 

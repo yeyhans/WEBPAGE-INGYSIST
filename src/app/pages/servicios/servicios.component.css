@@ -9,23 +9,5 @@ img{
  .col {
   padding: 10px; }
 
- .bootstrap-btn {
-	display: inline-block;
-	font-weight: 400;
-	color: #212529;
-	text-align: center;
-	border: 1px solid transparent;
-	padding: .375rem .75rem;
-	font-size: 1rem;
-	line-height: 1.5;
-	border-radius: .25rem;
-	color: #fff;
-	background-color: #007bff;
-}
 
-
-.bootstrap-btn:hover{
-  	background-color: #0069d9;
-
-}
 

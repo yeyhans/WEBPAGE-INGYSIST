@@ -8,6 +8,7 @@ export interface InfoPagina {
   linkedin?: string;
   instagram?: string;
   whatsapp?: string;
-  telefono?: string
+  telefono?: string;
+  direccion?: string;
 
 }

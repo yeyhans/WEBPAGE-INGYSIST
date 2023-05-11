@@ -18,12 +18,12 @@ import { ClientesComponent } from './pages/clientes/clientes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarruselClientes } from "./componentes/carrusel/clientes/clientes.component";
-import { environment } from 'src/environments/environment.development';
+
 //FIRESTORE
-import { provideFirestore, getFirestore } from '@angular/fire/firestore';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+
 import { AcercadeComponent } from './componentes/desc/acercade/acercade.component';
 import { ProyectosComponent } from './componentes/desc/proyectos/proyectos.component';
+import { FormularioComponent } from './pages/contacto/formulario/formulario.component';
 
 
 
@@ -43,7 +43,8 @@ import { ProyectosComponent } from './componentes/desc/proyectos/proyectos.compo
         ClientesComponent,
         CarruselClientes,
         AcercadeComponent,
-        ProyectosComponent
+        ProyectosComponent,
+        FormularioComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -51,9 +52,7 @@ import { ProyectosComponent } from './componentes/desc/proyectos/proyectos.compo
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        NgbModule,
-        provideFirebaseApp(() => initializeApp(environment.firebase)),
-        provideFirestore(() => getFirestore())
+        NgbModule
 
 
     ]

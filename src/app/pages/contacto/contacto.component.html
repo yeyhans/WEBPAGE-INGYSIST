@@ -3,11 +3,45 @@
     <div class="col">
     </div>
     <div class="col">
-      <app-carrusel-clientes></app-carrusel-clientes>
+      <app-formulario-contacto></app-formulario-contacto>
+
     </div>
     <div class="col">
     </div>
   </div>
+
+    <hr class="p-2">
+
+    <div class="card-group text-center">
+      <div class="card" style="width: 18rem;">
+        <i class="fas fa-envelope fa-3x mb-4"></i>
+        <div class="card-body">
+          <h5 class="card-title">Escribenos al</h5>
+          <p class="card-text">{{_servicio.info.email}}</p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <i class="fas fa-phone fa-3x text- mb-4"></i>
+        <div class="card-body" >
+          <h5 class="card-title">Llámanos al</h5>
+          <p class="card-text">{{_servicio.info.telefono}}</p>
+
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <i class="fas fa-location-dot fa-3x mb-4"></i>
+        <div class="card-body">
+          <h5 class="card-title">Visítanos en</h5>
+          <p class="card-text">{{_servicio.info.direccion}}</p>
+
+        </div>
+      </div>
+    </div>
+
+
+  <div class="">
+  <app-carrusel-clientes></app-carrusel-clientes>
+  </div>
+
 </div>
-
-

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InfoPaginaService } from '../services/info-pagina.service';
+import { InfoPaginaService } from '../../services/info-pagina.service';
 
 @Component({
   selector: 'app-header',

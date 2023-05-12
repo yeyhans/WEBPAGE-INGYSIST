@@ -1,34 +1,45 @@
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ">
+    <div class="container-fluid ">
 
-<div class="navbar-header">
-  <div class="topnav-centered">
+      <a href="/" class="navbar-brand">
+        <span class="fs-4">{{_servicio.info.titulo}}</span>
+         </a>
 
-    <nav class="navbar navbar-expand navbar-fixed-top" style="background-color: #ffffff;">
-      <div class="col"></div>
+      <button
 
-      <div class="col">
-    <a href="/" class="navbar-brand">
-      <span class="fs-4">INGENIERIA INDUSTRIAL Y DE SISTEMAS</span>
-    </a>
-  </div>
-  <div class="col">
-    <ul class="navbar-nav mr-auto">
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navButton"
+        aria-controls="navButton"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        (click)="collapse.toggle()"
 
-      <li class="nav-item"><a routerLink="" class="nav-link" routerLinkActive="">Inicio</a></li>
-      <li class="nav-item"><a routerLink="nosotros" class="nav-link" routerLinkActive="active">Nosotros</a></li>
-      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Servicios</a>
-        <ul class="dropdown-menu">
-          <li class="nav-item"><a routerLink="formulacion-de-proyectos-para-fondos-concursables" class="nav-link">Formulación de proyectos para fondos concursables</a></li>
-          <li class="nav-item"><a routerLink="diseño-y-desarrollo-de-sistemas-informáticos" class="nav-link">Diseño y desarrollo de sistemas informáticos</a></li>
-          <li class="nav-item"><a routerLink="modelamiento-de-procesos" class="nav-link">Modelamiento de procesos</a></li>
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" class="collapse navbar-collapse justify-content-center" id="navButton">
+
+        <ul class="navbar-nav justify-content-center">
+
+
+          <li class="nav-item"><a  routerLink="" class="nav-link" routerLinkActive="">Inicio</a></li>
+          <li class="nav-item"><a  routerLink="nosotros" class="nav-link" routerLinkActive="active">Nosotros</a></li>
+          <li class="nav-item dropdown"><a  class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Servicios</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a  routerLink="formulacion-de-proyectos-para-fondos-concursables" class="nav-link">Formulación de proyectos para fondos concursables</a></li>
+              <li class="nav-item"><a  routerLink="diseño-y-desarrollo-de-sistemas-informáticos" class="nav-link">Diseño y desarrollo de sistemas informáticos</a></li>
+              <li class="nav-item"><a  routerLink="modelamiento-de-procesos" class="nav-link">Modelamiento de procesos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item" routerLinkActive="active"><a  routerLink="contacto" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Contacto</a></li>
+
+
         </ul>
-      </li>
-      <li class="nav-item" routerLinkActive="active"><a routerLink="contacto" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Contacto</a></li>
-    </ul>
-  </div>
+      </div>
 
-  <div class="col"></div>
+    </div>
   </nav>
-</div>
-</div>
-
 

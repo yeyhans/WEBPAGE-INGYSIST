@@ -3,7 +3,7 @@
   <div class="border-0">
   <div class="row mb-2">
   <div *ngFor="let acerca of acercade" class="col-md-6 animate__animated animate__fadeIn">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="height: 400px;">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative text-center">
       <div class="col p-4 d-flex flex-column position-static">
         <strong class="d-inline-block mb-2">
         <h3 class="mb-0">{{acerca.titulo}}</h3></strong>
@@ -12,7 +12,7 @@
 
       </div>
       <div class="col-auto d-none d-lg-block">
-        <img src={{acerca.urlImg}} class="card-img" width="200" height="250">
+        <img src={{acerca.urlImg}} class="card-img img-fluid">
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { InfoPaginaService } from '../../services/info-pagina.service';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-header',
@@ -9,5 +10,7 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
 export class HeaderComponent {
 
   constructor(public _servicio: InfoPaginaService){}
+
+  public isCollapsed = true;
 
 }

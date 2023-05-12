@@ -1,8 +1,9 @@
+<div class="container marketing px-4 py-5 my-5 text-justify">
 <title>SERVICIOS</title>
-<div class="container marketing">
+
 <div class="row align-items-center">
   <div class="col-lg-4 text-center animate__animated animate__fadeIn" *ngFor="let s of servicios">
-    <img src={{s.urlImg}} class="bd-placeholder-img rounded-circle" width="250"  preserveAspectRatio="xMidYMid slice" focusable="false">
+    <img src={{s.urlImg}} class="bd-placeholder-img rounded-circle img-fluid" preserveAspectRatio="xMidYMid slice" >
 
     <div class="col"><h2 class="fw-normal center">{{s.titulo}}</h2></div>
     <div class="col">{{s.descripcion}}</div>
